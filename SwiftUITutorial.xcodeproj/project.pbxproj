@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A114E35F27D3CC38006CD513 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E35E27D3CC38006CD513 /* MainView.swift */; };
+		A114E36427D3D0BD006CD513 /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E36327D3D0BD006CD513 /* Programmer.swift */; };
+		A114E36727D3D13A006CD513 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E36627D3D13A006CD513 /* RowView.swift */; };
+		A114E36927D3D382006CD513 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A114E36827D3D382006CD513 /* ListView.swift */; };
 		A12E12E227CFAAF10057982E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E12E127CFAAF10057982E /* ImageView.swift */; };
 		A12E12E427CFB0FE0057982E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E12E327CFB0FE0057982E /* MapView.swift */; };
 		A14D132627CF556300CC0C42 /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14D132527CF556300CC0C42 /* SwiftUITutorialApp.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A114E35E27D3CC38006CD513 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A114E36327D3D0BD006CD513 /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		A114E36627D3D13A006CD513 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		A114E36827D3D382006CD513 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A12E12E127CFAAF10057982E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		A12E12E327CFB0FE0057982E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A14D132227CF556300CC0C42 /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +44,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A114E36027D3D079006CD513 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A114E36327D3D0BD006CD513 /* Programmer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A114E36527D3D105006CD513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A114E35E27D3CC38006CD513 /* MainView.swift */,
+				A14D132727CF556300CC0C42 /* ContentView.swift */,
+				A12E12E127CFAAF10057982E /* ImageView.swift */,
+				A12E12E327CFB0FE0057982E /* MapView.swift */,
+				A114E36627D3D13A006CD513 /* RowView.swift */,
+				A114E36827D3D382006CD513 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A14D131927CF556300CC0C42 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				A14D132527CF556300CC0C42 /* SwiftUITutorialApp.swift */,
-				A14D132727CF556300CC0C42 /* ContentView.swift */,
-				A12E12E127CFAAF10057982E /* ImageView.swift */,
-				A12E12E327CFB0FE0057982E /* MapView.swift */,
+				A114E36527D3D105006CD513 /* Views */,
+				A114E36027D3D079006CD513 /* Data */,
 				A14D132927CF556300CC0C42 /* Assets.xcassets */,
 				A14D132B27CF556300CC0C42 /* Preview Content */,
 			);
@@ -143,9 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A114E36927D3D382006CD513 /* ListView.swift in Sources */,
 				A12E12E227CFAAF10057982E /* ImageView.swift in Sources */,
+				A114E36427D3D0BD006CD513 /* Programmer.swift in Sources */,
+				A114E36727D3D13A006CD513 /* RowView.swift in Sources */,
 				A12E12E427CFB0FE0057982E /* MapView.swift in Sources */,
 				A14D132827CF556300CC0C42 /* ContentView.swift in Sources */,
+				A114E35F27D3CC38006CD513 /* MainView.swift in Sources */,
 				A14D132627CF556300CC0C42 /* SwiftUITutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 6847YQ47R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 6847YQ47R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
